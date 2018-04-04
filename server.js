@@ -49,6 +49,12 @@ app.get('/about',  (req, res) => {
 });
 
 
+app.get('/newpage', (req, res) => {
+  res.render('', {
+    pageTitle: 'new page'
+  });
+});
+
 app.get('/bad', (req, res) =>{
   res.send({
     errorMessage: 'Unable to handle request'
